@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class CategorizareVarsta {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Introduceti varsta: ");
+        int varsta = input.nextInt();
+
+        String categorie = (varsta < 18) ? "copil" : (varsta < 65) ? "adult" : "senior";
+        System.out.println("Categorie: " + categorie);
+    }
+}

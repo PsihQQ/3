@@ -1,0 +1,14 @@
+public class NumarImpar {
+    public static void main(String[] args) {
+        int[] numere = {2, 4, 6, 5, 8, 10, 11, 12, 14, 15, 18};
+
+        int i = 0;
+        while (i < numere.length) {
+            if (numere[i] % 2 != 0) {
+                System.out.println("Primul numar impar gasit: " + numere[i]);
+                break;
+            }
+            i++;
+        }
+    }
+}
